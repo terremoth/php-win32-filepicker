@@ -1,6 +1,10 @@
-# {project-url}
+# PHP Win32 File Picker
 
-{project-description}  
+Unlocked by the power of PHP's [FFI](https://www.php.net/manual/en/book.ffi.php)
+
+_Not because we must do it, but because we can!_
+
+Made by [Terremoth](https://github.com/terremoth/) with ⚡ & ❤
 
 <div align="center">
     
