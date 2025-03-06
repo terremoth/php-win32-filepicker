@@ -64,6 +64,3 @@ jobs:
           path: src/,demos/,tests/
           output: text
           ruleset: phpmd.xml
-      
-      - name: OSSF Scorecard action
-        uses: ossf/scorecard-action@f49aabe0b5af0936a0987cfb85d86b75731b0186
