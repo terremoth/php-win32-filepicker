@@ -6,6 +6,7 @@ on:
       - '**/*.php'
       - '**/*.css'
       - '**/*.js'
+      - '**/*.yml'
   pull_request:
     paths:
       - '**/*.php'
