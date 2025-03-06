@@ -58,9 +58,11 @@ $selectedFiles = $fp->open();
 
 print_r($selectedFiles);
 
-// if no files were selected, and empty array will be returned 😉
+// if no files were selected, an empty array will be returned 😉
 ```
-  
-See [demos/demo.php](demos/demo.php) for example.
+
+That's it!  
+
+See [demos/demo.php](demos/demo.php) for this example.
 
 
