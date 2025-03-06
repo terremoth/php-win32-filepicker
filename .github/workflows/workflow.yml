@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@9e72090525849c5e82e596468b86eb55e9cc5401
         with:
           php-version: '8.2'
           coverage: xdebug
@@ -58,7 +58,7 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: PHP Mess Detector
-        uses: php-actions/phpmd@v1
+        uses: php-actions/phpmd@e1af7d29f7025cc51def85527b966bda4b3abdb8
         with:
           php_version: 8.1
           path: src/,demos/,tests/
