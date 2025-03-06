@@ -18,6 +18,7 @@ Made by [Terremoth](https://github.com/terremoth/) with ⚡ & ❤
 [![Latest Stable Version](https://poser.pugx.org/terremoth/php-win32-filepicker/v/stable)](https://packagist.org/packages/terremoth/php-win32-filepicker)
 [![Total Downloads](https://poser.pugx.org/terremoth/php-win32-filepicker/downloads)](https://packagist.org/packages/terremoth/php-win32-filepicker)
 [![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2FJxFhMVWu82%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&logo=discord&logoColor=white&label=Users%20Total&color=green)](https://discord.gg/JxFhMVWu82)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/terremoth/php-win32-filepicker/badge)](https://scorecard.dev/viewer/?uri=github.com/terremoth/php-win32-filepicker)
 </div>
 <div align="center">
 
