@@ -3,7 +3,9 @@
     "description": "",
     "type": "library",
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "ext-ffi": "*",
+        "ext-iconv": "*"
     },
     "keywords": [
         "project-template"

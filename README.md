@@ -1,5 +1,10 @@
 # PHP Win32 File Picker
 
+Calls Windows Explorer to select file(s).  
+
+You are able to configure to select 1 or multiple files, 
+filtering by extensions or let the user free to choose any.
+
 Unlocked by the power of PHP's [FFI](https://www.php.net/manual/en/book.ffi.php)
 
 _Not because we must do it, but because we can!_
@@ -27,9 +32,35 @@ Made by [Terremoth](https://github.com/terremoth/) with ⚡ & ❤
 ## Installation
 
 ```sh
-composer require terremoth/PROJECT_NAME
+composer require terremoth/php-win32-filepicker
 ```
 
 ## Documentation
+
+```php
+require_once 'vendor/autoload.php';
+
+use Terremoth\Win32\FilePicker;
+
+$selectedDirectory = $_SERVER['USERPROFILE'] ?? 'C:\\'; // optional
+
+$fp = new FilePicker($selectedDirectory); // $selectedDirectory can be null without problem.
+
+// all methods below are *optional*:
+$fp
+    ->selectMultipleFiles()
+    ->addExtensionsFilter(['png', 'jpg', 'gif', 'avif', 'webp', 'jpeg', 'ico', 'bmp'])
+    ->filterOnlySelectedExtensions()
+    ->setDefaultExtensionSearch('png')
+;
+
+$selectedFiles = $fp->open();
+
+print_r($selectedFiles);
+
+// if no files were selected, and empty array will be returned 😉
+```
   
-See [demos/demo.php](demos/demo.php) for examples.
+See [demos/demo.php](demos/demo.php) for example.
+
+
