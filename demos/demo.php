@@ -3,6 +3,8 @@
 require_once 'vendor/autoload.php';
 
 use Terremoth\Win32\FilePicker;
+use Terremoth\Win32\FolderPicker;
+use Terremoth\Win32\FolderPicker2;
 
 $selectedDirectory = $_SERVER['USERPROFILE'] ?? 'C:\\'; // optional
 
@@ -18,6 +20,7 @@ $fp
 
 $selectedFiles = $fp->open();
 
-print_r($selectedFiles);
+$fs = new FolderPicker();
+echo $fs->open();
 
 // if no files were selected, and empty array will be returned 😉
